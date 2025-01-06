@@ -1,0 +1,11 @@
+
+<app-header class="w-full"></app-header>
+<div class="w-full h-full ">
+    <app-banner [banTitle]="bannerDetail.title" [banDes]="bannerDetail.overview" [key]="vidKey" ></app-banner>
+</div>
+
+<div class=" h-full pt-0">
+    <app-movie-carousel class="w-full h-full" [videoContents]="popularMovies" title="Popular Movies" />  
+    <app-movie-carousel class="w-full h-full" [videoContents]="tvShows" title="TV-Shows" />  
+    <app-movie-carousel class="w-full h-full" [videoContents]="tvShows" title="Top-Rated" />  
+</div>
